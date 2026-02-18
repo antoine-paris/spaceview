@@ -5,14 +5,24 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // Import translation resources
 import commonFr from './resources/fr/common.json';
 import commonEn from './resources/en/common.json';
+import commonDe from './resources/de/common.json';
+import commonEs from './resources/es/common.json';
 import astroFr from './resources/fr/astro.json';
 import astroEn from './resources/en/astro.json';
+import astroDe from './resources/de/astro.json';
+import astroEs from './resources/es/astro.json';
 import uiFr from './resources/fr/ui.json';
 import uiEn from './resources/en/ui.json';
+import uiDe from './resources/de/ui.json';
+import uiEs from './resources/es/ui.json';
 import infoFr from './resources/fr/info.json';
 import infoEn from './resources/en/info.json';
+import infoDe from './resources/de/info.json';
+import infoEs from './resources/es/info.json';
 import flatEarthSimulatorFr from './resources/fr/flatEarthSimulator.json';
 import flatEarthSimulatorEn from './resources/en/flatEarthSimulator.json';
+import flatEarthSimulatorDe from './resources/de/flatEarthSimulator.json';
+import flatEarthSimulatorEs from './resources/es/flatEarthSimulator.json';
 
 const resources = {
   fr: {
@@ -28,6 +38,20 @@ const resources = {
     ui: uiEn,
     info: infoEn,
     flatEarthSimulator: flatEarthSimulatorEn,
+  },
+  de: {
+    common: commonDe,
+    astro: astroDe,
+    ui: uiDe,
+    info: infoDe,
+    flatEarthSimulator: flatEarthSimulatorDe,
+  },
+  es: {
+    common: commonEs,
+    astro: astroEs,
+    ui: uiEs,
+    info: infoEs,
+    flatEarthSimulator: flatEarthSimulatorEs,
   },
 };
 

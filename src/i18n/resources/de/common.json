@@ -1,0 +1,52 @@
+{
+  "navigation": {
+    "back": "← Anwendung benutzen",
+    "close": "Schließen",
+    "expand": "Erweitern",
+    "return": "Zurück",
+    "goToApp": "Zur Anwendung gehen",
+    "installApp": "App installieren",
+    "appInstalled": "App installiert"
+  },
+  "time": {
+    "now": "Jetzt",
+    "setCurrentTime": "Aktuelle Uhrzeit einstellen",
+    "enterDateTime": "Datum und Uhrzeit lokal zu Ihrem Browser eingeben",
+    "goToMinusHour": "Gehe zu -1 Stunde",
+    "goToPlusHour": "Gehe zu +1 Stunde"
+  },
+  "recording": {
+    "inProgress": "Aufnahme läuft",
+    "frame": "Bild",
+    "timecode": "{{hours}}:{{minutes}}:{{seconds}}"
+  },
+  "loading": {
+    "locations": "Standorte werden geladen…",
+    "models": "3D-Modelle werden geladen… {{percent}}%",
+    "sceneRendering": "Szene wird gerendert…"
+  },
+  "directions": {
+    "north": "Norden",
+    "south": "Süden",
+    "east": "Osten",
+    "west": "Westen",
+    "northAbbrev": "N",
+    "southAbbrev": "S",
+    "eastAbbrev": "O",
+    "westAbbrev": "W",
+    "toNorth": "Nach Norden gehen (100 km)",
+    "toSouth": "Nach Süden gehen (100 km)",
+    "toEast": "Nach Osten gehen (100 km)",
+    "toWest": "Nach Westen gehen (100 km)"
+  },
+  "location": {
+    "nearNorthPole": "Nahe Nordpol",
+    "nearSouthPole": "Nahe Südpol",
+    "kmFromNorthPole": "{{km}} km vom Nordpol",
+    "kmFromSouthPole": "{{km}} km vom Südpol",
+    "coordinates": "Br: {{lat}} Lg: {{lng}}",
+    "coordinatesWithDistance": "Br: {{lat}} Lg: {{lng}} ({{km}} km {{direction}} von {{city}})",
+    "coordNearestCity": "Br: {{lat}} Lg: {{lng}} ({{km}} km {{dir}} von {{nearestCityName}})",
+    "localTime": "Ortszeit"
+  }
+}

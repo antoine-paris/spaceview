@@ -23,12 +23,12 @@ export default function LanguageSwitcher({
     const currentSearch = window.location.search;
     
     // Remove existing language prefix if present
-    const pathWithoutLang = currentPath.replace(/^\/(fr|en)\//, '/').replace(/^\/(fr|en)$/, '/');
-    
+    const pathWithoutLang = currentPath.replace(/^\/(fr|en|de|es)\//, '/').replace(/^\/(fr|en|de|es)$/, '/');
+
     // Add new language prefix (unless it's the default)
-    const newPath = lang === 'fr' 
-      ? pathWithoutLang 
-      : `/en${pathWithoutLang === '/' ? '' : pathWithoutLang}`;
+    const newPath = lang === 'fr'
+      ? pathWithoutLang
+      : `/${lang}${pathWithoutLang === '/' ? '' : pathWithoutLang}`;
     
     // Update URL without reloading the page
     window.history.replaceState(null, '', newPath + currentSearch);
@@ -55,7 +55,7 @@ export default function LanguageSwitcher({
 
   return (
     <div className={`flex gap-1 ${className}`}>
-      <button 
+      <button
         onTouchEnd={(e) => {
           e.preventDefault();
           handleLanguageChange('fr');
@@ -66,7 +66,7 @@ export default function LanguageSwitcher({
       >
         🇫🇷 {showLabels && 'FR'}
       </button>
-      <button 
+      <button
         onTouchEnd={(e) => {
           e.preventDefault();
           handleLanguageChange('en');
@@ -76,6 +76,28 @@ export default function LanguageSwitcher({
         title="English"
       >
         🇬🇧 {showLabels && 'EN'}
+      </button>
+      <button
+        onTouchEnd={(e) => {
+          e.preventDefault();
+          handleLanguageChange('de');
+        }}
+        onClick={() => handleLanguageChange('de')}
+        className={`${baseButtonClass} ${i18n.language === 'de' ? activeClass : inactiveClass}`}
+        title="Deutsch"
+      >
+        🇩🇪 {showLabels && 'DE'}
+      </button>
+      <button
+        onTouchEnd={(e) => {
+          e.preventDefault();
+          handleLanguageChange('es');
+        }}
+        onClick={() => handleLanguageChange('es')}
+        className={`${baseButtonClass} ${i18n.language === 'es' ? activeClass : inactiveClass}`}
+        title="Español"
+      >
+        🇪🇸 {showLabels && 'ES'}
       </button>
     </div>
   );

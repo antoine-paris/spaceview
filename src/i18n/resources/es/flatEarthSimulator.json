@@ -1,0 +1,46 @@
+{
+  "title": "Simulador de Tierra Plana",
+  "controls": {
+    "fov": "Campo de visión (FOV)",
+    "expand": "Ampliar",
+    "back": "Volver",
+    "expandSimulator": "Ampliar el simulador de tierra plana",
+    "animation": "Animación (24h)",
+    "play": "Reproducir",
+    "pause": "Pausa",
+    "showTrajectories": "Mostrar las trayectorias",
+    "reset": "Reiniciar"
+  },
+  "sun": {
+    "title": "Sol",
+    "height": "Altura",
+    "size": "Tamaño",
+    "orbit": "Órbita",
+    "intensity": "Intensidad",
+    "beamWidth": "Ancho del haz"
+  },
+  "moon": {
+    "title": "Luna",
+    "height": "Altura",
+    "size": "Tamaño",
+    "orbit": "Órbita"
+  },
+  "stars": {
+    "title": "Estrellas",
+    "showDome": "Mostrar la cúpula"
+  },
+  "cities": {
+    "wholeEarth": "Toda la tierra"
+  },
+  "compass": {
+    "north": "N",
+    "east": "E",
+    "south": "S",
+    "west": "O"
+  },
+  "description": {
+    "main": "Con esta aplicación, simule su hipótesis de tierra plana y compare con el simulador {{logoText}} SpaceView.me (que está basado en una tierra esférica).",
+    "moonCycle": "En esta versión, la luna da una \"vuelta\" en 29 días.",
+    "contactUs": "Si cree que debemos añadir un parámetro ajustable para probar su hipótesis, contáctenos en las redes sociales."
+  }
+}

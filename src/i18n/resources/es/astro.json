@@ -1,0 +1,46 @@
+{
+  "sun": {
+    "title": "Sol",
+    "altitude": "Altitud",
+    "azimuth": "Azimut",
+    "apparentDiameter": "Diámetro aparente",
+    "distance": "Distancia",
+    "eclipticTilt": "Inclinación eclíptica / horizonte"
+  },
+  "moon": {
+    "title": "Luna",
+    "altitude": "Altitud",
+    "azimuth": "Azimut",
+    "apparentDiameter": "Diámetro aparente",
+    "distance": "Distancia",
+    "phase": "Fase",
+    "phaseIlluminated": "{{percent}}% iluminada",
+    "earthshine": "Luz cenicienta",
+    "libration": "Libración",
+    "librationToEarth": "{{quadrant}} hacia la Tierra",
+    "parallaticAngle": "Ángulo del limbo",
+    "horizontalParallax": "Paralaje horizontal",
+    "orientation": "Orientación (paraláctico)",
+    "solarDeclination": "Dec. solar",
+    "geocentric": "Geocéntrico",
+    "topocentric": "Topocéntrico"
+  },
+  "directions": {
+    "north": "Norte",
+    "south": "Sur",
+    "east": "Este",
+    "west": "Oeste",
+    "top": "Arriba",
+    "bottom": "Abajo",
+    "northAbbrev": "N",
+    "southAbbrev": "S",
+    "eastAbbrev": "E",
+    "westAbbrev": "O"
+  },
+  "units": {
+    "degrees": "°",
+    "kilometers": "km",
+    "percent": "%",
+    "astronomicalUnit": "UA"
+  }
+}

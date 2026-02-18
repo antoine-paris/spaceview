@@ -23,6 +23,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/en" element={<App />} />
         <Route path="/fr" element={<App />} />
+        <Route path="/de" element={<App />} />
+        <Route path="/es" element={<App />} />
         
         {/* Info layout (light theme, crawlable subpages) */}
         <Route path="/info" element={<InfoPage />}>
@@ -53,18 +55,42 @@ createRoot(document.getElementById('root')!).render(
           <Route path="contact" element={<ContactTab />} />
         </Route>
 
+        <Route path="/de/info" element={<InfoPage />}>
+          <Route index element={<SpaceViewTab />} />
+          <Route path="help" element={<HelpTab />} />
+          <Route path="simulations" element={<SimulationsTab />} />
+          <Route path="flat-earth" element={<FlatEarthTab />} />
+          <Route path="bug" element={<BugReportTab />} />
+          <Route path="contact" element={<ContactTab />} />
+        </Route>
+
+        <Route path="/es/info" element={<InfoPage />}>
+          <Route index element={<SpaceViewTab />} />
+          <Route path="help" element={<HelpTab />} />
+          <Route path="simulations" element={<SimulationsTab />} />
+          <Route path="flat-earth" element={<FlatEarthTab />} />
+          <Route path="bug" element={<BugReportTab />} />
+          <Route path="contact" element={<ContactTab />} />
+        </Route>
+
         {/* Feature landing pages */}
         <Route path="/eclipse-predictor" element={<EclipsePredictorPageWrapper />} />
         <Route path="/en/eclipse-predictor" element={<EclipsePredictorPageWrapper />} />
         <Route path="/fr/eclipse-predictor" element={<EclipsePredictorPageWrapper />} />
-        
+        <Route path="/de/eclipse-predictor" element={<EclipsePredictorPageWrapper />} />
+        <Route path="/es/eclipse-predictor" element={<EclipsePredictorPageWrapper />} />
+
         <Route path="/moon-phase-calculator" element={<MoonPhaseCalculatorPageWrapper />} />
         <Route path="/en/moon-phase-calculator" element={<MoonPhaseCalculatorPageWrapper />} />
         <Route path="/fr/moon-phase-calculator" element={<MoonPhaseCalculatorPageWrapper />} />
-        
+        <Route path="/de/moon-phase-calculator" element={<MoonPhaseCalculatorPageWrapper />} />
+        <Route path="/es/moon-phase-calculator" element={<MoonPhaseCalculatorPageWrapper />} />
+
         <Route path="/astrophotography-planner" element={<AstroPhotographyPlannerPageWrapper />} />
         <Route path="/en/astrophotography-planner" element={<AstroPhotographyPlannerPageWrapper />} />
         <Route path="/fr/astrophotography-planner" element={<AstroPhotographyPlannerPageWrapper />} />
+        <Route path="/de/astrophotography-planner" element={<AstroPhotographyPlannerPageWrapper />} />
+        <Route path="/es/astrophotography-planner" element={<AstroPhotographyPlannerPageWrapper />} />
         
         {/* Catch-all route: redirect all unknown routes to home */}
         <Route path="*" element={<Navigate to="/" replace />} />

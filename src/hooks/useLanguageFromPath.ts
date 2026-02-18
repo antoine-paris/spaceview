@@ -13,9 +13,9 @@ export function useLanguageFromPath() {
     // Extract language from URL path
     const pathParts = pathname.split('/').filter(Boolean);
     const potentialLang = pathParts[0];
-    
+
     // Check if the first path segment is a valid language code
-    if (potentialLang === 'en' || potentialLang === 'fr') {
+    if (potentialLang === 'en' || potentialLang === 'fr' || potentialLang === 'de' || potentialLang === 'es') {
       // Only change language if it's different from current
       if (i18n.language !== potentialLang) {
         i18n.changeLanguage(potentialLang);
@@ -38,8 +38,8 @@ export function useLanguageFromPath() {
   // Return current language and path info
   return {
     currentLanguage: i18n.language,
-    hasLanguagePrefix: pathname.startsWith('/en/') || pathname.startsWith('/fr/'),
-    pathLanguage: pathname.startsWith('/en/') ? 'en' : pathname.startsWith('/fr/') ? 'fr' : null,
+    hasLanguagePrefix: pathname.startsWith('/en/') || pathname.startsWith('/fr/') || pathname.startsWith('/de/') || pathname.startsWith('/es/'),
+    pathLanguage: pathname.startsWith('/en/') ? 'en' : pathname.startsWith('/fr/') ? 'fr' : pathname.startsWith('/de/') ? 'de' : pathname.startsWith('/es/') ? 'es' : null,
   };
 }
 
@@ -51,6 +51,12 @@ export function getPathWithoutLanguage(pathname: string): string {
     return pathname.slice(3) || '/';
   }
   if (pathname.startsWith('/fr/')) {
+    return pathname.slice(3) || '/';
+  }
+  if (pathname.startsWith('/de/')) {
+    return pathname.slice(3) || '/';
+  }
+  if (pathname.startsWith('/es/')) {
     return pathname.slice(3) || '/';
   }
   return pathname;

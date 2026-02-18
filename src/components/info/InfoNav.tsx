@@ -19,9 +19,13 @@ export default function InfoNav() {
   // This ensures the navigation updates when language changes
   const currentLanguage = i18n.language;
   let infoBasePath = '/info';
-  
+
   if (currentLanguage === 'en') {
     infoBasePath = '/en/info';
+  } else if (currentLanguage === 'de') {
+    infoBasePath = '/de/info';
+  } else if (currentLanguage === 'es') {
+    infoBasePath = '/es/info';
   } else if (currentLanguage === 'fr') {
     infoBasePath = '/info'; // French is default, no prefix
   } else {

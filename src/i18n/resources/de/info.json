@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "SpaceView.me",
+    "subtitle": "Informationen und Hilfe",
+    "description": "Interaktive astronomische Simulation"
+  },
+  "tabs": {
+    "spaceview": "SpaceView",
+    "help": "Hilfe",
+    "simulations": "Simulationen",
+    "flatearth": "Flache Erde?",
+    "bug": "Fehlerbericht",
+    "contact": "Kontakt"
+  },
+  "metadata": {
+    "keywords": "Astronomie, Simulation, Mond, Sonne, Finsternis, Beobachtung",
+    "description": "SpaceView ist eine interaktive astronomische Simulationsanwendung zur Beobachtung von Mond, Sonne und Planeten von jedem Ort auf der Erde aus."
+  },
+  "meta": {
+    "title": "SpaceView.me — Informationen, Hilfe, Simulationen",
+    "description": "SpaceView-Hilfe, Simulationsbeispiele, Links und Anleitung zur Fehlerberichterstattung. Visualisieren Sie Mond, Sonne, Sterne und Planeten.",
+    "helpTitle": "SpaceView.me — Hilfe und Dokumentation",
+    "defaultDescription": "Informationen, Hilfe und Simulationen für SpaceView.me."
+  }
+}

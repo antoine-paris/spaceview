@@ -1,0 +1,46 @@
+{
+  "title": "Flache-Erde-Simulator",
+  "controls": {
+    "fov": "Sichtfeld (FOV)",
+    "expand": "Erweitern",
+    "back": "Zurück",
+    "expandSimulator": "Flache-Erde-Simulator erweitern",
+    "animation": "Animation (24h)",
+    "play": "Abspielen",
+    "pause": "Pause",
+    "showTrajectories": "Trajektorien anzeigen",
+    "reset": "Zurücksetzen"
+  },
+  "sun": {
+    "title": "Sonne",
+    "height": "Höhe",
+    "size": "Größe",
+    "orbit": "Umlaufbahn",
+    "intensity": "Intensität",
+    "beamWidth": "Strahlbreite"
+  },
+  "moon": {
+    "title": "Mond",
+    "height": "Höhe",
+    "size": "Größe",
+    "orbit": "Umlaufbahn"
+  },
+  "stars": {
+    "title": "Sterne",
+    "showDome": "Kuppel anzeigen"
+  },
+  "cities": {
+    "wholeEarth": "Ganze Erde"
+  },
+  "compass": {
+    "north": "N",
+    "east": "O",
+    "south": "S",
+    "west": "W"
+  },
+  "description": {
+    "main": "Mit dieser Anwendung können Sie Ihre Hypothese der flachen Erde simulieren und mit dem Simulator {{logoText}} SpaceView.me vergleichen (der auf einer kugelförmigen Erde basiert).",
+    "moonCycle": "In dieser Version macht der Mond eine \"Runde\" in 29 Tagen.",
+    "contactUs": "Wenn Sie denken, dass wir einen einstellbaren Parameter hinzufügen sollten, um Ihre Hypothese zu testen, kontaktieren Sie uns in den sozialen Medien."
+  }
+}

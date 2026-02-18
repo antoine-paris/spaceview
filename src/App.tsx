@@ -95,7 +95,7 @@ export default function App() {
       "operatingSystem": "Web Browser",
       "browserRequirements": "Requires JavaScript. Modern browser with WebGL support recommended.",
       "softwareVersion": "1.0",
-      "inLanguage": ["en", "fr"],
+      "inLanguage": ["en", "fr", "de", "es"],
       "author": {
         "@type": "Organization",
         "name": "SpaceView",

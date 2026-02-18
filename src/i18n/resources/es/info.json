@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "SpaceView.me",
+    "subtitle": "Información y Ayuda",
+    "description": "Simulación astronómica interactiva"
+  },
+  "tabs": {
+    "spaceview": "SpaceView",
+    "help": "Ayuda",
+    "simulations": "Simulaciones",
+    "flatearth": "¿Tierra plana?",
+    "bug": "Reporte de error",
+    "contact": "Contacto"
+  },
+  "metadata": {
+    "keywords": "astronomía, simulación, luna, sol, eclipse, observación",
+    "description": "SpaceView es una aplicación de simulación astronómica interactiva que permite observar la Luna, el Sol y los planetas desde cualquier lugar de la Tierra."
+  },
+  "meta": {
+    "title": "SpaceView.me — Información, Ayuda, Simulaciones",
+    "description": "Ayuda de SpaceView, ejemplos de simulaciones, enlaces y guía de reporte de errores. Visualice Luna, Sol, estrellas y planetas.",
+    "helpTitle": "SpaceView.me — Ayuda y documentación",
+    "defaultDescription": "Información, ayuda y simulaciones para SpaceView.me."
+  }
+}

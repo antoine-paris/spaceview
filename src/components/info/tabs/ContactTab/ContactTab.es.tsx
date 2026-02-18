@@ -1,0 +1,55 @@
+export default function ContactTabEs() {
+  const platforms = [
+    { name: 'X (Twitter)', slug: 'x', url: 'https://x.com/SpaceViewMe' },
+    { name: 'Facebook', slug: 'facebook', url: 'https://facebook.com/SpaceViewMe' },
+    { name: 'GitHub', slug: 'github', url: 'https://github.com/antoine-paris/spaceview' },
+    { name: 'Instagram', slug: 'instagram', url: 'https://instagram.com/SpaceViewMe' },
+    { name: 'YouTube', slug: 'youtube', url: 'https://youtube.com/@SpaceViewMe' },
+    { name: 'TikTok', slug: 'tiktok', url: 'https://tiktok.com/@SpaceViewMe' },
+    ];
+
+  const gridStyle: React.CSSProperties = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))',
+    gap: 16,
+    listStyle: 'none',
+    padding: 0,
+    margin: '16px 0'
+  };
+
+  const tileStyle: React.CSSProperties = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 12,
+    padding: 12,
+    border: '1px solid #e5e7eb',
+    borderRadius: 8,
+    textDecoration: 'none',
+    color: 'inherit',
+    background: '#fff',
+  };
+
+  return (
+    <article>
+      <h1>Contacto</h1>
+      <p>Encuentra SpaceView.me en estas redes sociales y plataformas de intercambio. ¡Puedes dejarnos mensajes allí!</p>
+      <ul style={gridStyle} className="info-content-margins">
+        {platforms.map(p => (
+          <li key={p.slug}>
+            <a href={p.url} target="_blank" rel="noopener noreferrer" style={tileStyle} aria-label={p.name}>
+              <img
+                src={`https://cdn.simpleicons.org/${p.slug}`}
+                alt={`Logo de ${p.name}`}
+                width={24}
+                height={24}
+                loading="lazy"
+                style={{ flex: '0 0 auto' }}
+              />
+              <span>{p.name}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </article>
+  );
+}
